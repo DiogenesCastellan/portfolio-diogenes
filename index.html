@@ -103,6 +103,40 @@ section:not(.hero):not(.dark):not(.contact) .job small{color:#a9d6c3}
 .hero h1,.section-head h2,.card h3{font-family:"acumin-pro", Arial, sans-serif;font-weight:600}
 .btn,.links a,.menu-toggle{font-family:"acumin-pro",Arial,sans-serif;font-weight:600}
 @media(max-width:680px){.brand{font-size:1.35rem}}
+
+/* Versão 0.3 — tipografia leve e leitura */
+:root { --font-ui:"acumin-pro","Segoe UI",Arial,sans-serif; --font-signature:"baskerville-urw",Georgia,serif; }
+html { -webkit-text-size-adjust:100%; text-size-adjust:100%; }
+body { font-family:var(--font-ui); font-size:16px; line-height:1.72; font-weight:400; letter-spacing:.003em; -webkit-font-smoothing:antialiased; }
+.brand,.brand span { font-family:var(--font-signature); font-size:inherit; font-weight:500; letter-spacing:-.018em; }
+.brand { font-size:clamp(1.23rem,2vw,1.62rem); line-height:1.2; }
+.hero h1 { font-family:var(--font-ui); font-weight:300; font-size:clamp(2.55rem,5.2vw,4.8rem); line-height:1.14; letter-spacing:-.028em; text-wrap:balance; }
+.hero h1 em { font-weight:400; }
+.hero p { font-size:clamp(1.025rem,1.55vw,1.14rem); font-weight:400; line-height:1.8; letter-spacing:0; }
+.section-head h2 { font-family:var(--font-ui); font-weight:400; line-height:1.24; letter-spacing:-.018em; text-wrap:balance; }
+.section-head p { font-size:1.02rem; line-height:1.8; }
+.card h3,.dark .card h3 { font-family:var(--font-ui); font-weight:500; letter-spacing:-.008em; line-height:1.42; }
+.card p,.dark .card p { font-size:.99rem; line-height:1.75; font-weight:400; }
+.job h3,.skills h3 { font-family:var(--font-ui); font-weight:500; line-height:1.4; letter-spacing:-.01em; }
+.job p,.skills li { line-height:1.8; }
+.job small { font-weight:500; }
+.btn,.links a,.menu-toggle,.socials a { font-family:var(--font-ui); font-weight:500; letter-spacing:.008em; }
+.btn { font-size:.95rem; min-height:48px; }
+.links a { font-size:.9rem; }
+.eyebrow { font-family:var(--font-ui); font-weight:500; font-size:.75rem; letter-spacing:.13em; }
+.tag { font-family:var(--font-ui); font-weight:500; letter-spacing:.07em; }
+.pill { font-weight:400; }
+.portrait-card { background:linear-gradient(140deg,#83b6a026,#ffffff0d); }
+@media(max-width:900px) { .hero-grid { gap:28px; } .links { gap:13px; } }
+@media(max-width:800px) { .links a { font-size:1rem; font-weight:400; } .brand { font-size:clamp(1.2rem,4.3vw,1.55rem); } }
+@media(max-width:680px) {
+ .hero h1 { font-size:clamp(2.3rem,10vw,3.3rem); line-height:1.16; }
+ .hero p,.section-head p { font-size:1rem; line-height:1.75; }
+ .section-head h2 { font-size:clamp(1.75rem,7vw,2.25rem); }
+ .card h3 { font-size:1.1rem; }
+ .brand { font-size:clamp(1.16rem,4.8vw,1.45rem); }
+}
+
 </style>
 </head>
 <body>

@@ -270,38 +270,174 @@ section{padding-block:clamp(54px,6vw,82px)}
 #experiencia .job p{max-width:840px}
 #projetos .case-label{font-weight:500}
 @media(max-width:760px){.case-cta{flex-direction:column;align-items:stretch;padding:22px}.case-cta .btn{white-space:normal;text-align:center}}
+/* Leitura do case e navegação */
+.skip{position:fixed}
+.nav .links a:hover,.nav .links a:focus-visible{color:#a7d5c2}
+.case-featured{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);align-items:start}
+.case-featured .case-content{padding:clamp(18px,3vw,32px)}
+.case-featured .case-metrics{margin:18px 0;grid-template-columns:repeat(auto-fit,minmax(115px,1fr))}
+.case-metrics div{padding:10px;border-radius:8px;background:#20354a;color:#dce8ec;display:flex;flex-direction:column-reverse;justify-content:flex-end}
+.case-metrics dt{font-size:.79rem;line-height:1.35}
+.case-metrics dd{margin:0 0 4px;color:#fff;font-size:1.13rem;font-weight:600}
+.case-evidence{min-width:0;margin:0;padding:clamp(18px,3vw,32px) clamp(18px,3vw,32px) 22px 0}
+.case-evidence .case-art-image{border-radius:10px}
+.case-evidence img{aspect-ratio:auto}
+.case-evidence figcaption,.video-link{color:#becdd8;font-size:.86rem;margin:10px 0}
+.case-evidence .btn{margin-top:6px}
+.case-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.case-actions .btn:hover,.case-evidence .btn:hover{background:#ffffff13}
+@media(max-width:760px){
+  .case-featured{grid-template-columns:minmax(0,1fr)}
+  .case-evidence{padding:0 18px 22px}
+}
+@media(max-width:680px){
+  .hero-copy .hero-name{font-size:clamp(2.65rem,13vw,4.6rem)}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-actions .btn{transition:none}
+  .hero-actions .btn.primary:hover{transform:none}
+}
+/* Atalhos para avaliação profissional */
+.profile-links{margin-top:22px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.profile-links a{display:flex;flex-direction:column;gap:4px;padding:16px 19px;border:1px solid #ffffff35;border-radius:9px;text-decoration:none}
+.profile-links a:hover{border-color:var(--gold);background:#ffffff0a}
+.profile-links strong{font-weight:650}
+.profile-links span{font-size:.87rem;color:inherit}
+.site-build{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:18px;border:1px solid #ffffff30;border-radius:12px;padding:22px 25px}
+.site-build h3{margin:0 0 6px;font-size:1.08rem}
+.site-build p{max-width:690px;margin:0;font-size:.94rem}
+.site-build .btn{flex-shrink:0;border-color:currentColor}
+.site-build .btn:hover{background:#83b6a020}
+.curated-models a:focus-visible,.case-evidence a:focus-visible{outline-offset:-4px}
+#experiencia .career-employers{list-style:none;max-width:840px;margin:12px 0 0;padding:0}
+#experiencia .career-employers li{display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px 18px;padding:9px 0;border-bottom:1px solid var(--line)}
+#experiencia .career-employers li:last-child{border-bottom:0}
+#experiencia .career-employers .career-period{color:var(--muted);font-size:.9rem;white-space:nowrap}
+@media(max-width:760px){
+  .profile-links{grid-template-columns:1fr;gap:8px}
+  .profile-links a{padding:12px 16px}
+  .site-build{align-items:flex-start;flex-direction:column;gap:14px;padding:18px}
+}
 </style>
-<meta content="Diógenes Castellan | Marketing, Growth, Tecnologia &amp; IA" property="og:title"/><meta content="Portfólio profissional: campanhas e resultados, CRM, ERP, IA e produção audiovisual." property="og:description"/><meta content="website" property="og:type"/><meta content="https://diogenescastellan.github.io/portfolio-diogenes/" property="og:url"/><link href="https://diogenescastellan.github.io/portfolio-diogenes/" rel="canonical"/></head>
+<meta content="Diógenes Castellan | Marketing, Growth, Tecnologia &amp; IA" property="og:title"/><meta content="Portfólio profissional: campanhas e resultados, CRM, ERP, IA e produção audiovisual." property="og:description"/><meta content="website" property="og:type"/><meta content="https://diogenescastellan.github.io/portfolio-diogenes/foto-diogenes.jpg" property="og:image"/><meta content="Retrato profissional de Diógenes Castellan" property="og:image:alt"/><meta content="pt_BR" property="og:locale"/><meta content="https://diogenescastellan.github.io/portfolio-diogenes/" property="og:url"/><link href="https://diogenescastellan.github.io/portfolio-diogenes/" rel="canonical"/></head>
 <body>
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
-<header><nav aria-label="Navegação principal" class="container nav"><a class="brand" href="#inicio">Diógenes <span>Castellan</span></a><button aria-controls="site-links" aria-expanded="false" aria-label="Abrir menu de navegação" class="menu-toggle" type="button"><span aria-hidden="true" class="bars"><span></span><span></span><span></span></span></button><div class="links" id="site-links"><a href="#sobre">Sobre</a><a href="#projetos">Projetos</a><a href="#personagens">Personagens IA</a><a href="#competencias">Competências</a><a href="#experiencia">Experiência</a><a href="#contato">Contato</a></div></nav></header>
-<main id="conteudo">
-<section aria-labelledby="hero-title" class="hero hero-cinematic" id="inicio"><div aria-hidden="true" class="hero-glow"></div><div class="container hero-grid hero-grid-cinematic"><div class="hero-visual"><div class="portrait-wrap"><div class="portrait-card"><img alt="Retrato profissional de Diógenes Castellan" fetchpriority="high" height="365" loading="eager" onerror="this.style.opacity='.2';this.alt='Foto indisponível no momento'" src="foto-diogenes.jpg" width="310"/></div></div><div class="portrait-label">Negócios <span aria-hidden="true">/</span> Marketing <span aria-hidden="true">/</span> Tecnologia</div></div><div class="hero-copy"><div class="eyebrow hero-reveal hero-kicker">PORTFÓLIO PROFISSIONAL <span aria-hidden="true">·</span> JOINVILLE / SC</div><h1 class="hero-name hero-reveal" id="hero-title">Diógenes<br/><span>Castellan</span><span aria-hidden="true" class="hero-name-dot">.</span></h1><div aria-hidden="true" class="hero-rule hero-reveal"></div><h2 class="hero-statement hero-reveal">Visão de negócios. <em>Execução com tecnologia.</em></h2><p class="hero-description hero-reveal">Marketing, Growth, Vendas, Inteligência Artificial e sistemas empresariais. Conecto estratégia comercial, dados e ferramentas digitais para resolver problemas e desenvolver oportunidades.</p><div class="actions hero-actions hero-reveal"><a class="btn primary" href="#projetos">Explorar projetos <span aria-hidden="true">↗</span></a><a class="btn outline" href="https://www.linkedin.com/in/dcastellan/" rel="noopener noreferrer" target="_blank">Ver LinkedIn</a></div></div></div><div aria-hidden="true" class="hero-bottom"><span>ESTRATÉGIA · CRIATIVIDADE · TECNOLOGIA</span><span>EXPLORE ↓</span></div></section>
-<section id="sobre"><div class="container"><div class="section-head"><div class="accent"></div><div class="eyebrow">Perfil</div><h2>Experiência comercial com mentalidade de evolução contínua</h2><p>Publicitário formado pela UNIP, com trajetória em veículos de comunicação, desenvolvimento comercial e gestão de negócios. Hoje atuo na interseção entre marketing de performance, dados, automação e produção criativa com IA — do planejamento à implementação.</p></div></div></section>
+<header><nav aria-label="Navegação principal" class="container nav"><a class="brand" href="#inicio">Diógenes <span>Castellan</span></a><button aria-controls="site-links" aria-expanded="false" aria-label="Abrir menu de navegação" class="menu-toggle" type="button"><span aria-hidden="true" class="bars"><span></span><span></span><span></span></span></button><div class="links" id="site-links"><a href="#sobre">Sobre</a><a href="#projetos">Projetos</a><a href="#personagens">Criações</a><a href="#competencias">Competências</a><a href="#experiencia">Experiência</a><a href="#contato">Contato</a></div></nav></header>
+<main id="conteudo" tabindex="-1">
+<section aria-labelledby="hero-title" class="hero hero-cinematic" id="inicio"><div aria-hidden="true" class="hero-glow"></div><div class="container hero-grid hero-grid-cinematic"><div class="hero-visual"><div class="portrait-wrap"><div class="portrait-card"><img alt="Retrato profissional de Diógenes Castellan" fetchpriority="high" height="365" loading="eager" onerror="this.style.opacity='.2';this.alt='Foto indisponível no momento'" src="foto-diogenes.jpg" width="310"/></div></div><div class="portrait-label">Negócios <span aria-hidden="true">/</span> Marketing <span aria-hidden="true">/</span> Tecnologia</div></div><div class="hero-copy"><div class="eyebrow hero-reveal hero-kicker">PORTFÓLIO PROFISSIONAL <span aria-hidden="true">·</span> JOINVILLE / SC</div><h1 class="hero-name hero-reveal" id="hero-title">Diógenes<br/><span>Castellan</span><span aria-hidden="true" class="hero-name-dot">.</span></h1><div aria-hidden="true" class="hero-rule hero-reveal"></div><h2 class="hero-statement hero-reveal">Visão de negócios. <em>Execução com tecnologia.</em></h2><p class="hero-description hero-reveal">Planejo campanhas de aquisição, acompanho conversões e organizo processos comerciais com CRM e ERP. Minha experiência inclui negociação de mídia e gestão do próprio negócio.</p><div class="actions hero-actions hero-reveal"><a class="btn primary" href="#projetos">Ver cases e resultados</a><a class="btn outline" href="https://www.linkedin.com/in/dcastellan/" rel="noopener noreferrer" target="_blank">Ver LinkedIn</a></div></div></div></section>
+<section id="sobre"><div class="container"><div class="section-head"><div class="accent"></div><div class="eyebrow">Perfil</div><h2>Marketing, vendas e implantação de sistemas</h2><p>Sou bacharel em Publicidade e Propaganda pela UNIP. Atuei em prospecção e negociação de projetos de mídia no Grupo Bandeirantes e no Grupo ND, administrei o Choppeleiro Delivery e hoje trabalho com aquisição, mensuração e atendimento comercial na VitalVille.</p></div>
+<nav class="profile-links" aria-label="Cases por área">
+  <a href="#google-ads"><strong>Aquisição e Growth</strong><span>Google Ads e mensuração</span></a>
+  <a href="#crm-flux"><strong>Vendas e atendimento</strong><span>Implantação do CRM Flux</span></a>
+  <a href="#gestaoclick"><strong>Sistemas e processos</strong><span>GestãoClick e automação fiscal</span></a>
+</nav></div></section>
 <section class="case-section" id="projetos">
 <div class="container">
-<div class="section-head"><div class="accent"></div><div class="eyebrow">Portfólio em prática</div><h2>Projetos que conectam estratégia e execução</h2><p>Uma seleção objetiva de entregas em aquisição de clientes, implantação de sistemas e produção audiovisual. Cada projeto destaca minha participação prática e o contexto dos resultados.</p></div>
+<div class="section-head"><div class="accent"></div><div class="eyebrow">Portfólio em prática</div><h2>Cases de campanhas, CRM e ERP</h2><p>Campanhas de Pesquisa para o setor de saúde, implantação de CRM e automação fiscal em uma operação de delivery.</p></div>
 <div class="case-grid">
-<article class="case-card"><div class="case-art art-growth case-art-image"><img alt="Painel visual de resultados de campanhas Google Ads do setor hospitalar e ortopédico, de 8 de setembro a 7 de outubro de 2026" decoding="async" loading="lazy" src="case-google-ads.webp"/></div><p class="case-visual-caption">Painel ilustrativo de desempenho. A estimativa de 12,7× exibida na arte compara valores do período, mas não é ROAS de vendas atribuídas.</p><div class="case-content"><span class="case-label">Marketing de performance · Set–Out 2026</span><h3>Google Ads: estratégia, campanhas e mensuração</h3><p><strong>Contexto:</strong> campanhas de pesquisa para produtos hospitalares e ortopédicos, com segmentação em Joinville e região.</p><p><strong>Atuação:</strong> planejamento e otimização de campanhas por categoria e intenção de compra; análise de resultados e acompanhamento da mensuração com Google Ads, GA4, Search Console e Google Tag Manager.</p><div class="case-metrics"><span><b>22.438</b> impressões</span><span><b>1.348</b> cliques</span><span><b>314</b> conversões registradas</span><span><b>R$ 22,63</b> CPA informado</span></div><p><strong>Investimento em mídia:</strong> R$ 7.106,42 no período analisado. <strong>Faturamento comercial da empresa:</strong> aproximadamente R$ 90 mil no mesmo intervalo, incluindo negócios originados em diferentes momentos. Os valores não representam receita atribuída exclusivamente a esses anúncios.</p><p class="case-disclaimer"><strong>Ciclo comercial:</strong> grande parte das negociações é concluída em cerca de uma semana, com oportunidades que podem se estender por até um mês ou, pontualmente, por períodos maiores. Leads adquiridos agora podem gerar receita futura, assim como vendas do mês podem vir de campanhas anteriores.</p><p class="case-disclaimer">Fonte: painel-resumo fornecido pelo autor (08/09–07/10/2026). As 314 conversões são registros da plataforma, não necessariamente vendas. Os números ainda não foram confrontados com exportações das ferramentas. A relação entre investimento e faturamento da empresa não constitui ROAS atribuído ou comprovado.</p></div></article>
-<article class="case-card"><div class="case-art art-crm"><span class="art-index">02 / PROCESSOS</span><div class="art-figure">CRM <span>◎</span></div><span class="art-foot">Atendimento • Fluxos • Equipe</span></div><div class="case-content"><span class="case-label">VitalVille · Relacionamento</span><h3>Implantação e organização do CRM Flux</h3><p><strong>Desafio:</strong> centralizar informações e tornar o acompanhamento de oportunidades mais consistente.</p><p><strong>Atuação:</strong> implantação do CRM, organização de etapas e fluxos de atendimento, integração com a rotina comercial e treinamento da equipe.</p><p><strong>Entrega:</strong> processo de relacionamento estruturado para o acompanhamento de contatos e negociações.</p></div></article>
-<article class="case-card"><div class="case-art art-erp"><span class="art-index">03 / SISTEMAS</span><div class="art-figure">ERP <span>⌘</span></div><span class="art-foot">Gestão • Automação • Operação</span></div><div class="case-content"><span class="case-label">Choppeleiro Delivery · Gestão</span><h3>Configuração do GestãoClick e notas fiscais</h3><p><strong>Desafio:</strong> organizar a operação e reduzir tarefas administrativas manuais.</p><p><strong>Atuação:</strong> configuração do ERP GestãoClick e automação da emissão de notas fiscais eletrônicas, com suporte da plataforma quando necessário.</p><p><strong>Entrega:</strong> rotina administrativa apoiada por sistema e automação.</p></div></article>
-<article class="case-card"><div class="case-art art-video"><span class="art-index">04 / CONTEÚDO</span><div class="art-figure">AI <span>✦</span></div><span class="art-foot">Roteiro • Vídeo • Voz</span></div><div class="case-content"><span class="case-label">Criação audiovisual · IA generativa</span><h3>Conteúdo visual e vídeos para comunicação</h3><p><strong>Desafio:</strong> transformar ideias e necessidades de comunicação em peças visuais.</p><p><strong>Atuação:</strong> roteiros, edição em Adobe Premiere Pro, geração de imagens e vídeos com IA e experimentação de narração sintética.</p><p><strong>Ferramentas:</strong> Runway, Google Flow, Higgsfield, ElevenLabs, Photoshop e Canva, conforme o projeto.</p></div></article>
+<article class="case-card case-featured" id="google-ads" aria-labelledby="google-ads-title">
+  <div class="case-content">
+    <span class="case-label">Marketing de performance · 8 set. a 7 out. de 2026</span>
+    <h3 id="google-ads-title">Google Ads para produtos hospitalares e ortopédicos</h3>
+    <p>Planejei e otimizei campanhas de Pesquisa em Joinville e região, segmentando por categoria de produto e intenção de compra. Usei Google Ads, GA4 e Google Tag Manager para acompanhar o desempenho e a mensuração.</p>
+    <dl class="case-metrics" aria-label="Indicadores de mídia no período">
+      <div><dt>Impressões</dt><dd>22.438</dd></div>
+      <div><dt>Cliques</dt><dd>1.348</dd></div>
+      <div><dt>Conversões registradas</dt><dd>314</dd></div>
+      <div><dt>Custo por conversão</dt><dd>R$ 22,63</dd></div>
+      <div><dt>Investimento em mídia</dt><dd>R$ 7.106,42</dd></div>
+    </dl>
+    <p><strong>Contexto comercial.</strong> A empresa informou faturamento total próximo de R$ 90 mil no intervalo. O total inclui negociações iniciadas em diferentes datas e reúne vendas de várias origens.</p>
+    <p class="case-disclaimer">Fonte dos indicadores: painel-resumo do período. As conversões são ações registradas no Google Ads. A receita atribuída às campanhas depende da conciliação com os fechamentos no CRM.</p>
+  </div>
+  <figure class="case-evidence">
+    <a class="case-art case-art-image" href="case-google-ads.webp" aria-label="Abrir painel original de Google Ads em tamanho integral">
+      <img alt="Painel-resumo original com investimento e conversões por campanha de Pesquisa" decoding="async" loading="lazy" src="case-google-ads.webp"/>
+    </a>
+    <figcaption>O painel original chama de “ROAS estimado” a razão entre faturamento total e investimento. O cálculo de ROAS requer receita atribuída às campanhas.</figcaption>
+    <a class="btn outline" href="case-google-ads.webp">Ampliar painel</a>
+  </figure>
+</article>
+<article class="case-card" id="crm-flux"><div class="case-art art-crm" aria-hidden="true"><span class="art-index">PROCESSOS</span><div class="art-figure">CRM <span>◎</span></div><span class="art-foot">Atendimento • Fluxos • Equipe</span></div><div class="case-content"><span class="case-label">VitalVille · Relacionamento</span><h3>Implantação e organização do CRM Flux</h3><p><strong>Desafio:</strong> centralizar informações e tornar o acompanhamento de oportunidades mais consistente.</p><p><strong>Atuação:</strong> implantação do CRM, organização de etapas e fluxos de atendimento, integração com a rotina comercial e treinamento da equipe.</p><p><strong>Entrega:</strong> processo de relacionamento estruturado para o acompanhamento de contatos e negociações.</p></div></article>
+<article class="case-card" id="gestaoclick"><div class="case-art art-erp" aria-hidden="true"><span class="art-index">SISTEMAS</span><div class="art-figure">ERP <span>⌘</span></div><span class="art-foot">Gestão • Automação • Operação</span></div><div class="case-content"><span class="case-label">Choppeleiro Delivery · Gestão</span><h3>Configuração do GestãoClick e notas fiscais</h3><p><strong>Desafio:</strong> organizar a operação e reduzir tarefas administrativas manuais.</p><p><strong>Atuação:</strong> configuração do ERP GestãoClick e automação da emissão de notas fiscais eletrônicas, com suporte da plataforma quando necessário.</p><p><strong>Entrega:</strong> emissão automatizada de notas fiscais eletrônicas no GestãoClick.</p></div></article>
+
 </div>
-<div class="case-cta"><div><strong>Da estratégia à operação.</strong><p>Campanhas, mensuração, relacionamento comercial e sistemas são partes de uma mesma jornada de negócios.</p></div><a class="btn outline" href="#experiencia">Ver trajetória profissional ↗</a></div></div>
+<div class="case-actions"><a class="btn outline" href="#experiencia">Ver trajetória profissional</a><a class="btn outline" href="#personagens">Ver criações e vídeos</a></div></div>
 </section>
 <section class="characters-section" id="personagens"><div class="container"><div class="section-head"><div class="accent"></div><div class="eyebrow">Direção criativa &amp; IA</div><h2>Criações selecionadas</h2><p>Uma seleção de projetos que demonstra variedade de aplicação: personagens virtuais, comunicação imobiliária e vídeos de produto.</p></div>
-<div class="curated-project"><div class="gallery-heading"><span class="case-label">01 / Identidade e consistência visual</span><h3>Personagens virtuais</h3><p>Criação integral dos personagens masculinos e femininos, da concepção e direção de arte à construção visual, com seleção de enquadramentos e cenários para demonstrar consistência de identidade.</p></div><div class="curated-models">
+<div class="curated-project"><div class="gallery-heading"><span class="case-label">Direção de arte com IA</span><h3>Personagens virtuais</h3><p>Concepção e direção de arte de dois personagens. A seleção mostra como a identidade visual se mantém em diferentes enquadramentos, figurinos e cenários.</p></div><div class="curated-models">
 <figure><a href="modelo-masculino-01.webp" rel="noopener" target="_blank"><img alt="Personagem masculino virtual em ambiente executivo" decoding="async" loading="lazy" src="modelo-masculino-01.webp"/></a><figcaption>Masculino · Ambiente executivo</figcaption></figure>
 <figure><a href="modelo-masculino-04.webp" rel="noopener" target="_blank"><img alt="Personagem masculino virtual em cenário esportivo" decoding="async" loading="lazy" src="modelo-masculino-04.webp"/></a><figcaption>Masculino · Contexto esportivo</figcaption></figure>
 <figure><a href="modelo-feminino-03.webp" rel="noopener" target="_blank"><img alt="Retrato frontal de personagem feminina virtual" decoding="async" loading="lazy" src="modelo-feminino-03.webp"/></a><figcaption>Feminino · Retrato</figcaption></figure>
 <figure><a href="modelo-feminino-04.webp" rel="noopener" target="_blank"><img alt="Personagem feminina virtual em composição de corpo inteiro" decoding="async" loading="lazy" src="modelo-feminino-04.webp"/></a><figcaption>Feminino · Corpo inteiro</figcaption></figure>
 </div></div>
-<div class="curated-project"><div class="gallery-heading"><span class="case-label">02 / Publicidade imobiliária</span><h3>Marine Itajuba · Conceito de campanha</h3><p>Projeto de publicidade imobiliária com concepção criativa, direção de arte, produção de elementos com IA, montagem, edição, locução e finalização no Adobe Premiere Pro. O painel publicitário é um mockup conceitual, não uma instalação comprovada.</p></div><div class="realestate-grid"><a href="marine-itajuba-mockup.webp" rel="noopener" target="_blank"><img alt="Mockup conceitual de outdoor Marine Itajuba" decoding="async" loading="lazy" src="marine-itajuba-mockup.webp"/></a><div class="realestate-video"><video aria-label="Vídeo do empreendimento Marine Itajuba" controls="" playsinline="" preload="metadata"><source src="video-marine-itajuba.mp4" type="video/mp4"/>Vídeo não suportado.</video><p>Produção audiovisual híbrida · IA como recurso de criação · Edição, locução e finalização no Adobe Premiere Pro</p></div></div></div>
-<div class="curated-project"><div class="gallery-heading"><span class="case-label">03 / Comunicação de produto</span><h3>VitalVille · Vídeo de produto</h3><p>Vídeo de comunicação de produto com responsabilidade integral pela concepção, direção criativa, recursos de IA, montagem, edição, locução e finalização no Adobe Premiere Pro. A IA complementou o processo de produção audiovisual.</p></div><video aria-label="Vídeo de produto VitalVille" class="portfolio-video" controls="" playsinline="" preload="metadata"><source src="video-vitalville.mp4" type="video/mp4"/>Vídeo não suportado.</video></div>
-<p class="portfolio-note">Autoria e execução integral dos projetos apresentados: conceito, direção criativa e produção. Nos dois vídeos, a IA foi utilizada como recurso de apoio; edição, locução e finalização foram realizadas no Adobe Premiere Pro. Materiais fornecidos pelo autor.</p></div></section>
-<section id="competencias"><div class="container"><div class="section-head"><div class="accent"></div><div class="eyebrow">O que utilizo na prática</div><h2>Competências e tecnologias</h2><p>Conhecimentos aplicados em projetos reais, organizados por área para facilitar a avaliação profissional.</p></div><div class="grid capability-grid"><article class="card"><h3>Marketing e dados</h3><p>Google Ads · Meta Ads · GA4 · Google Tag Manager · Search Console · CRM Flux</p></article><article class="card"><h3>IA e produção</h3><p>ChatGPT · Gemini · Higgsfield · Runway · Google Flow · ElevenLabs · Adobe Premiere Pro · Photoshop · Canva</p></article><article class="card"><h3>Negócios e sistemas</h3><p>ERP GestãoClick · automação de notas fiscais · processos comerciais · negociação · análise de necessidades · GitHub · VS Code</p></article></div></div></section>
-<section id="experiencia"><div class="container"><div class="section-head"><div class="accent"></div><div class="eyebrow">Trajetória</div><h2>Experiência profissional</h2></div><div class="timeline"><article class="job"><h3>VitalVille · Marketing e Vendas</h3><small>Março de 2026 – atual</small><p>Gestão de campanhas Google Ads e Meta Ads, mensuração com GA4/GTM, acompanhamento do Search Console, implantação do CRM Flux e produção audiovisual com IA e Adobe Premiere Pro.</p></article><article class="job"><h3>Grupo ND · Executivo de Contas</h3><small>Julho a outubro de 2025</small><p>Relacionamento com anunciantes, prospecção, negociação e desenvolvimento de oportunidades comerciais em mídia.</p></article><article class="job"><h3>Choppeleiro Delivery · Proprietário e Administrador</h3><small>Maio de 2018 a janeiro de 2025</small><p>Gestão do negócio, operação comercial, configuração do ERP GestãoClick e automação da emissão de notas fiscais eletrônicas.</p></article><article class="job"><h3>Grupo Bandeirantes · Executivo de Contas</h3><small>Janeiro de 2015 a agosto de 2018</small><p>Gestão de contas e projetos comerciais para anunciantes, com experiência em mídia, ativações e negociação.</p></article></div></div></section>
-<section class="contact" id="contato"><div class="container"><div class="section-head"><div class="accent"></div><div class="eyebrow">Conexões</div><h2>Vamos conversar?</h2><p>Aberto a oportunidades em marketing, growth, vendas, análise de negócios, implantação de sistemas e projetos que conectem tecnologia a resultados.</p></div><div class="socials"><a href="mailto:diogenescastellan@gmail.com">E-mail</a><a href="https://www.linkedin.com/in/dcastellan/" rel="noopener noreferrer" target="_blank">LinkedIn</a><a href="https://github.com/DiogenesCastellan" rel="noopener noreferrer" target="_blank">GitHub</a><a href="https://wa.me/5547991761986" rel="noopener noreferrer" target="_blank">WhatsApp</a><a aria-label="Instagram de Diógenes Castellan" href="https://www.instagram.com/di_castellan/" rel="noopener noreferrer" target="_blank">Instagram</a><a aria-label="Facebook de Diógenes Castellan" href="https://www.facebook.com/di.da.praia?locale=pt_BR" rel="noopener noreferrer" target="_blank">Facebook</a><a aria-label="Perfil Discord de Diógenes Castellan" href="https://discord.com/users/720865491266043966" rel="noopener noreferrer" target="_blank">Discord</a></div></div></section>
+<div class="curated-project"><div class="gallery-heading"><span class="case-label">Publicidade imobiliária</span><h3>Marine Itajuba · Conceito de campanha</h3><p>Conceito de campanha imobiliária apresentado em mockup de outdoor e vídeo. Desenvolvi a direção de arte, produzi elementos com IA e fiz a montagem, a locução e a finalização no Premiere Pro.</p></div><div class="realestate-grid"><a href="marine-itajuba-mockup.webp" rel="noopener" target="_blank"><img alt="Mockup conceitual de outdoor Marine Itajuba" decoding="async" loading="lazy" src="marine-itajuba-mockup.webp"/></a><div class="realestate-video"><video aria-label="Vídeo do empreendimento Marine Itajuba" controls="" playsinline="" preload="metadata"><source src="video-marine-itajuba.mp4" type="video/mp4"/>Seu navegador não oferece reprodução de vídeo.</video><p><a href="video-marine-itajuba.mp4">Abrir vídeo Marine Itajuba (MP4)</a></p></div></div></div>
+<div class="curated-project"><div class="gallery-heading"><span class="case-label">Comunicação de produto</span><h3>VitalVille · Vídeo de produto</h3><p>Desenvolvi o conceito e a produção do vídeo de produto, com apoio de IA na criação e montagem, locução e finalização no Premiere Pro.</p></div><video aria-label="Vídeo de produto VitalVille" class="portfolio-video" controls="" playsinline="" preload="metadata"><source src="video-vitalville.mp4" type="video/mp4"/>Seu navegador não oferece reprodução de vídeo.</video><p class="video-link"><a href="video-vitalville.mp4">Abrir vídeo VitalVille (MP4)</a></p></div>
+</div></section>
+<section id="competencias">
+  <div class="container">
+    <div class="section-head"><div class="accent"></div><h2>Competências aplicadas</h2></div>
+    <div class="grid capability-grid">
+      <article class="card"><h3>Aquisição e mensuração</h3><p>Google Ads e Meta Ads para campanhas. GA4 e Tag Manager para mensuração. Search Console para acompanhar o desempenho orgânico.</p></article>
+      <article class="card"><h3>Operação comercial e sistemas</h3><p>Prospecção e negociação, implantação de funil e treinamento no CRM Flux, automação da emissão fiscal no GestãoClick.</p></article>
+      <article class="card"><h3>Produção audiovisual</h3><p>Roteiro, direção de arte, locução e edição no Premiere Pro. IA como apoio à criação de imagens e vídeos.</p></article>
+    </div>
+    <article class="site-build">
+      <div><h3>Como este portfólio foi construído</h3><p>Site estático em HTML, CSS e JavaScript, com navegação responsiva, animação 3D em CSS e suporte à preferência por movimento reduzido. O código está versionado no GitHub e a publicação usa GitHub Pages. Uso o VS Code para editar e a IA como apoio para explorar soluções e revisar o código.</p></div>
+      <a class="btn" href="https://github.com/DiogenesCastellan/portfolio-diogenes" target="_blank" rel="noopener noreferrer">Ver código no GitHub</a>
+    </article>
+  </div>
+</section>
+<section id="experiencia" aria-labelledby="experiencia-title">
+  <div class="container">
+    <div class="section-head">
+      <div class="accent"></div>
+      <div class="eyebrow">Trajetória</div>
+      <h2 id="experiencia-title">Experiência profissional</h2>
+      <p>Desde 2006, uma trajetória em propaganda farmacêutica, vendas de mídia, gestão do próprio negócio e marketing de performance.</p>
+    </div>
+    <div class="timeline">
+      <article class="job">
+        <h3>VitalVille · Gerente de Marketing de Vendas</h3>
+        <small><time datetime="2026-03">Março de 2026</time> – atual</small>
+        <p>Planejamento e otimização de Google Ads e Meta Ads, mensuração com GA4/GTM e acompanhamento de indicadores de aquisição, atendimento e vendas. Implantação do CRM Flux, integração do atendimento e treinamento da equipe. Produção de roteiros, vídeos e materiais criativos com Premiere Pro e IA.</p>
+      </article>
+      <article class="job">
+        <h3>Grupo ND · Executivo de Contas</h3>
+        <small><time datetime="2025-07">Julho</time> a <time datetime="2025-10">outubro de 2025</time></small>
+        <p>Prospecção, relacionamento com anunciantes e desenvolvimento de oportunidades comerciais. Elaboração de propostas e negociação de soluções publicitárias, alinhando necessidades dos clientes, objetivos de campanha e formatos de mídia.</p>
+      </article>
+      <article class="job">
+        <h3>Choppeleiro Delivery · Proprietário e Administrador</h3>
+        <small><time datetime="2018-05">Maio de 2018</time> a <time datetime="2025-01">janeiro de 2025</time></small>
+        <p>Gestão integral do negócio, incluindo marketing, operação comercial, finanças, compras, fornecedores, atendimento e liderança de equipe. Configuração do ERP GestãoClick e automação da emissão de notas fiscais eletrônicas.</p>
+      </article>
+      <article class="job">
+        <h3>Grupo Bandeirantes de Comunicação · Executivo de Contas</h3>
+        <small><time datetime="2015-01">Janeiro de 2015</time> a <time datetime="2018-08">agosto de 2018</time></small>
+        <p>Gestão de carteira e negociação de mídia com clientes diretos e agências. Desenvolvimento de propostas, projetos comerciais, campanhas e ações de ativação de marca em rádio e eventos.</p>
+      </article>
+      <article class="job">
+        <h3>Comunicação e mídia · Executivo de Contas</h3>
+        <small><time datetime="2010">2010</time> a <time datetime="2014">2014</time></small>
+        <p>Prospecção, negociação e relacionamento com agências e clientes, com desenvolvimento de novos negócios, campanhas e projetos publicitários.</p>
+        <ul class="career-employers" aria-label="Empresas e períodos como executivo de contas entre 2010 e 2014">
+          <li><span>Grupo Now</span><span class="career-period"><time datetime="2014">2014</time></span></li>
+          <li><span>TV Bandeirantes</span><span class="career-period"><time datetime="2012">2012</time>–<time datetime="2014">2014</time></span></li>
+          <li><span>Mobz Cinema</span><span class="career-period"><time datetime="2012">2012</time></span></li>
+          <li><span>Band Outernet</span><span class="career-period"><time datetime="2011">2011</time>–<time datetime="2012">2012</time></span></li>
+          <li><span>Rádio Metropolitana FM</span><span class="career-period"><time datetime="2010">2010</time>–<time datetime="2011">2011</time></span></li>
+        </ul>
+      </article>
+      <article class="job">
+        <h3>Setor farmacêutico · Propagandista</h3>
+        <small><time datetime="2006">2006</time> a <time datetime="2009">2009</time></small>
+        <p>Atuação em Wyeth/Pfizer, Libbs e Dermadream, com comunicação de produtos, relacionamento com profissionais de saúde e gestão de carteira.</p>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="contact" id="contato"><div class="container"><div class="section-head"><div class="accent"></div><div class="eyebrow">Conexões</div><h2>Vamos conversar?</h2><p>Em Joinville, SC. Aberto a oportunidades em marketing de performance, operações comerciais e implantação de sistemas.</p></div><div class="socials"><a href="mailto:diogenescastellan@gmail.com">E-mail</a><a href="https://www.linkedin.com/in/dcastellan/" rel="noopener noreferrer" target="_blank">LinkedIn</a><a href="https://github.com/DiogenesCastellan" rel="noopener noreferrer" target="_blank">GitHub</a><a href="https://wa.me/5547991761986" rel="noopener noreferrer" target="_blank">WhatsApp</a></div></div></section>
 </main><footer><div class="container footer-row"><span>© <span id="year">2026</span> Diógenes Castellan</span><span>Portfólio profissional · Joinville, Santa Catarina</span></div></footer>
 <script>document.getElementById('year').textContent=new Date().getFullYear();
 (function(){
@@ -309,7 +445,16 @@ section{padding-block:clamp(54px,6vw,82px)}
  const links=document.getElementById('site-links');
  const closeMenu=()=>{toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Abrir menu de navegação');links.classList.remove('is-open')};
  toggle.addEventListener('click',()=>{const opening=toggle.getAttribute('aria-expanded')!=='true';toggle.setAttribute('aria-expanded',String(opening));toggle.setAttribute('aria-label',opening?'Fechar menu de navegação':'Abrir menu de navegação');links.classList.toggle('is-open',opening)});
- links.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMenu));
+ links.addEventListener('click',event=>{
+   const link=event.target.closest('a');
+   if(!link||toggle.getAttribute('aria-expanded')!=='true')return;
+   closeMenu();
+   const section=document.getElementById(link.hash.slice(1));
+   if(section){
+     section.tabIndex=-1;
+     section.focus({preventScroll:true});
+   }
+ });
  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&toggle.getAttribute('aria-expanded')==='true'){closeMenu();toggle.focus()}});
  document.addEventListener('click',event=>{if(!event.target.closest('.nav'))closeMenu()});
  window.matchMedia('(min-width: 801px)').addEventListener('change',event=>{if(event.matches)closeMenu()});
